@@ -79,19 +79,36 @@
 }
 #home h3{
   padding-top: 6%;
-  font-size:2.0rem;
+  font-size:1.5rem;
   opacity: 0;
   animation: slideTop 2s ease forwards infinite;
   animation-delay: 3s;
 
 }
-#home p{
-  padding-top: 6%;
-  font-size:1.0rem;
-  opacity: 0;
-  animation: slideBottom 2s ease forwards infinite;
-  animation-delay: 4s;
-
+#home .btn{
+  align-items: center;
+  width: 30%;
+  outline: none;
+  border: none;
+  background: rgb(248, 26, 92);
+  color: white;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+ 
+}
+#home1 .btn{
+  align-items: center;
+  width: 30%;
+  outline: none;
+  border: none;
+  background: rgb(248, 26, 92);
+  color: white;
+  border-radius: 60px;
+  font-weight: 700;
+  cursor: pointer;
+ 
 }
 #home1{
   position: relative;
@@ -99,9 +116,6 @@
   padding-left: 60%;
   font-size: 1.0rem;
   font-weight: 700; 
-  opacity: 0;
-  animation: slideBottom 2s ease forwards infinite;
-  animation-delay: 2s;
   color:white;
 
 }
@@ -126,20 +140,13 @@
 }
 #home1 h3{
   padding-top: 6%;
-  font-size:2.0rem;
+  font-size:1.5rem;
   opacity: 0;
   animation: slideTop 2s ease forwards infinite;
   animation-delay: 3s;
 
 }
-#home p{
-  padding-top: 6%;
-  font-size:1.0rem;
-  opacity: 0;
-  animation: slideBottom 2s ease forwards infinite;
-  animation-delay: 4s;
 
-}
 
 
 @keyframes slideRight{
@@ -183,6 +190,55 @@
   }
 }
 
-
-
+/* Media query for small devices */
+@media (max-width: 767px) {
+  .carousel-caption {
+    display: block !important; /* Ensure captions are displayed */
+  }
+  .carousel-caption .row > div {
+    display: block !important; /* Ensure the content within the rows is displayed */
+  }
   
+  /* Set explicit font sizes for your content on small devices */
+  .carousel-caption h1
+  {
+    font-size: 12px !important; /* Adjust the font size as needed */
+    
+  }
+  .carousel-caption h2 {
+    font-size: 8px !important;
+    padding-bottom: 2px !important;
+  }
+  .carousel-caption h3{
+    font-size: 8px !important;
+    padding-bottom: 2px !important;
+
+  }
+  .carousel-caption button{
+    font-size: 10px !important;
+    padding-bottom: 100px !important;
+    padding-top: 0.5px !important; 
+    display:block !important;
+    flex-direction: column;
+    padding-left: 30px !important;
+    object-fit: cover !important;
+  
+  }
+}
+
+@media (max-width: 767px){
+  .carousel-caption .row > #home-content {
+    display: block !important;
+
+  }
+  .carousel-caption .row > #home-content{
+    padding-bottom: 200px !important;
+  }
+  .carousel-caption .row > #home-content button{
+    padding-bottom: 180px !important;
+    flex-direction: column !important;
+    overflow-y: hidden !important;
+    display: block !important;
+
+  }
+}
