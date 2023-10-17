@@ -64,7 +64,7 @@
   font-size: 3.2rem;
   font-weight: 700; 
   opacity: 0;
-  animation: slideRight 1s ease forwards infinite;
+  animation: slideBottom 1s ease forwards infinite;
   animation-delay: 1s;
   color: red;
 }
@@ -82,7 +82,7 @@
   font-size:2.0rem;
   opacity: 0;
   animation: slideTop 2s ease forwards infinite;
-  animation-delay: 2s;
+  animation-delay: 3s;
 
 }
 #home p{
@@ -90,9 +90,57 @@
   font-size:1.0rem;
   opacity: 0;
   animation: slideBottom 2s ease forwards infinite;
+  animation-delay: 4s;
+
+}
+#home1{
+  position: relative;
+  padding-bottom: 10%;
+  padding-left: 60%;
+  font-size: 1.0rem;
+  font-weight: 700; 
+  opacity: 0;
+  animation: slideBottom 2s ease forwards infinite;
+  animation-delay: 2s;
+  color:white;
+
+}
+#home1 h1{
+  position: relative;
+  padding-top: 70%;
+  font-size: 3.0rem;
+  font-weight: 700; 
+  opacity: 0;
+  animation: slideBottom 1s ease forwards infinite;
+  animation-delay: 1s;
+  color: white;
+
+}
+#home1 h2{
+  padding-top: 5%;
+  font-size:2.0rem;
+  opacity: 0;
+  animation: slideLeft 2s ease forwards infinite;
   animation-delay: 2s;
 
 }
+#home1 h3{
+  padding-top: 6%;
+  font-size:2.0rem;
+  opacity: 0;
+  animation: slideTop 2s ease forwards infinite;
+  animation-delay: 3s;
+
+}
+#home p{
+  padding-top: 6%;
+  font-size:1.0rem;
+  opacity: 0;
+  animation: slideBottom 2s ease forwards infinite;
+  animation-delay: 4s;
+
+}
+
 
 @keyframes slideRight{
   0%{
