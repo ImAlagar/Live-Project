@@ -1,14 +1,22 @@
+
+:root {
+  --bg-color:#1f242d;
+  --seconf-bg-color:#323946;
+  --text-color:#fff;
+  --main-color:#0ef;
+}
+
 .navbar-brand img{
   width: 70px;
     height: 70px;
     border-radius:50%;
+    font-size: 2.5rem;
 
 }
 .nav-link{
   margin-right: 10px;
   margin-left: 10px;
-  color: black;
-
+  color: black; 
 }
 .nav-link:hover{
   color: black;
@@ -38,9 +46,95 @@
   
 }
 
-#cur1{
-  color: red;
-  margin-left: 20px;
+#home{
+  position: relative;
+  min-width: 100%; 
+  justify-content: space-between;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 20px  ;
+  
 }
+#home h1{
+  position: relative;
+  padding-top: 70%;
+  font-size: 3.2rem;
+  font-weight: 700; 
+  opacity: 0;
+  animation: slideRight 1s ease forwards infinite;
+  animation-delay: 1s;
+  color: red;
+}
+
+#home h2{
+  padding-top: 5%;
+  font-size:2.0rem;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards infinite;
+  animation-delay: 2s;
+
+}
+#home h3{
+  padding-top: 6%;
+  font-size:2.0rem;
+  opacity: 0;
+  animation: slideTop 2s ease forwards infinite;
+  animation-delay: 2s;
+
+}
+#home p{
+  padding-top: 6%;
+  font-size:1.0rem;
+  opacity: 0;
+  animation: slideBottom 2s ease forwards infinite;
+  animation-delay: 2s;
+
+}
+
+@keyframes slideRight{
+  0%{
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+@keyframes slideLeft{
+  0%{
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+@keyframes slideTop{
+  0%{
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+@keyframes slideBottom{
+  0%{
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+
 
   
